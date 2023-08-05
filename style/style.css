@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import "animate.css";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@1,100&family=Roboto:wght@100&display=swap');
+
+body {
+    background-color: #ffffff ;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+
+:root {
+    --font1: 'Bebas Neue', sans-serif;
+    --font2: 'IBM Plex Mono', monospace;    
+    --font3: 'Roboto', sans-serif;
+}
+
+header {
+    background: #000000;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    font-family: var(--font2);
+    
+}
+
+.animationOne, a, h1 {
+    color: #ffffff;
+    animation: zoomInDown;
+    animation-duration: 2s;
+    animation-delay: 0.7;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 1px 1px 1px white;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transform: scale(1.1);
+    font-family: var(--font3);
+}
+
+.estrofeUm, .estrofeTres {
+    background: #ffffff;
+    color: #000000;
+}
+
+.estrofeDois, .estrofeQuatro {
+    background: rgba(19, 19, 19, 0.846);
+    color: #ffffff;
+    border-radius: 7px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-top: 10px;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-family: var(--font1);
+}
+
+section.estrofeDois > p, section.estrofeQuatro > p {
+    background: #0000004c;
+    width: 300px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+#img01 {
+    background: url(/imagens/background001.jpg) no-repeat right center fixed;
+    background-size: cover;
+}
+
+#img02 {
+    background: url(/imagens/background002.jpg) no-repeat right center fixed;
+    background-size: cover;
+}
+
+footer {
+    background: #000000;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+footer > p {
+    color: #ffffff;
+}
